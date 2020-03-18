@@ -1,4 +1,4 @@
-#' @title Specifications For RStudio Conf 2020 Success
+#' @title Specifications For DataOpticon 2020 Success
 #' @section Last updated By:
 #' Ellis Hughes
 #' @section Last Update Date:

@@ -20,7 +20,7 @@ pres <- sidescroller(
       src = c(href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/"),
       stylesheet = "font-awesome.min.css"),
   htmltools::htmlDependency(
-    name = "RStudio_pres",
+    name = "DataOpticon_pres",
     version = "1.0",
     src = c(href = "www"),
     script = c("rstudio_conf_2020.js","prism.js"),
@@ -29,7 +29,7 @@ pres <- sidescroller(
 ## Title ----
 pres_title <- pres %>% 
   title_slide(
-    title = tags$div(style = "font-weight:200","Approaches to Assay Processing Package Validation"),
+    title = tags$div(style = "font-weight:200","R Package Validation"),
     subtitle = list("Ellis Hughes",
                  HTML("<p class='subtitle_text'><i href = 'https://twitter.com/ellis_hughes' style = 'text-decoration: none; color: white' class='fa fa-twitter'></i> @ellis_hughes</p>"),
                  "Fred Hutch Cancer Research Center - SCHARP - VISC"
@@ -37,10 +37,10 @@ pres_title <- pres %>%
     style = "font-family: 'Darker Grotesque',Arial;
     font-size: 40px;
     font-weight: 300;
-    background-image: url(img/rstudio_conf_background.png);
+    background-image: url(img/main_image.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;"
+    background-color: #ffcc00;
+    background-position: center bottom;"
   )
 
 ## Intro to the Pain
@@ -330,7 +330,7 @@ pres_val_specification <- pres_val_elements2 %>%
   panel_markdown("
   
   ```
-  - My RStudio::Conf presentation will 
+  - My DataOpticon presentation will 
     - The contents will cover my teams approach to validation
     - Be 15-20 minutes long
     - Be entertaining 
@@ -356,7 +356,7 @@ pres_val_specification <- pres_val_elements2 %>%
   panel(
   div(div(markdown_to_html("
   ```{r eval=FALSE, echo = TRUE}
-  #' @title Specifications For RStudio Conf 2020 Success
+  #' @title Specifications For DataOpticon Conf 2020 Success
   #' @section Last Updated By:
   #' Ellis Hughes
   #' @section Last Update Date:
@@ -566,7 +566,7 @@ pres_val_test <- pres_val_code %>%
   
   panel_markdown("
   ```{r eval=FALSE, echo = TRUE}
-  #' @title RStudio Conf 2020 Success Test Cases 001
+  #' @title DataOpticon Success Test Cases 001
   #' @section Last Updated By: 
   #' Ellis Hughes
   #' @section Last Update Date:
@@ -574,7 +574,7 @@ pres_val_test <- pres_val_code %>%
 
   + _Test Cases_
 
-  + Setup: Create RStudio::Conf 2020 Presentation 
+  + Setup: Create DataOpticon 2020 Presentation 
     
   + T 1.1 Test that specifications 1.1, 1.2, and 1.3 are met by practicing presentation on unsuspecting co-workers
   
@@ -635,9 +635,9 @@ pres_val_test_code <- pres_val_test %>%
 
   panel_markdown("
   ```{r eval=FALSE, echo = TRUE}
-  context('RStudio Conf 2020 Success')
+  context('DataOpticon 2020 Success')
   
-  #' @title RStudio Conf 2020 Success 
+  #' @title DataOpticon 2020 Success 
   #' @section Last Updated By: 
   #' Not Ellis Hughes
   #' @section Last Update Date:
@@ -680,7 +680,7 @@ pres_val_test_code <- pres_val_test %>%
   
   ```{r, eval = FALSE}
   |  OK F W S | Context
-  |   3       | RStudio Conf 2020 Success [3.2 s]
+  |   3       | DataOpticon 2020 Success [3.2 s]
   
   ══ Results ═══════════════════════════════════════
   Duration: 3.2 s
@@ -817,9 +817,9 @@ pres_final <- pres_conclusion %>%
    <div style = 'margin:auto;padding-top:20px;text-align:left; z-index:21; position: relative;'>
    <br>
    <div style = 'background-color: #ffffff;opacity: .5;border-radius: 10px;width: 900px;padding: 20px;font-size: 60px;margin:auto;color: black;'>
-    <p style = 'margin-bottom: 0; font-size: 70px;'>Presentation available at: <br><a href = 'https://thebioengineer.github.io/validation' style='text-decoration: none;'>   thebioengineer.github.io/validation</a></p>
+    <p style = 'margin-bottom: 0; font-size: 70px;'>Presentation available at: <br><a href = 'https://thebioengineer.github.io/dataopticon_2020' style='text-decoration: none;'>   thebioengineer.github.io/validation</a></p>
     <br>
-    <p style = 'margin-bottom: 0;'><i style = 'text-decoration: none;' class='fa fa-github-square'></i> github.com/thebioengineer/validation</p>
+    <p style = 'margin-bottom: 0;'><i style = 'text-decoration: none;' class='fa fa-github-square'></i> github.com/thebioengineer/dataopticon_2020</p>
     <br>
     <div style = 'margin:auto'>
     <p style = 'margin-bottom: 0;'><i style = 'text-decoration: none;'  class='fa fa-twitter-square'></i> @ellis_hughes</p>
@@ -838,6 +838,6 @@ pres_final <- pres_conclusion %>%
 ## Save Presentation ----
 
 save_sidescroller(pres_final,
-                  here("Approaches_to_Assay_Processing_Package_Validation.html"))
+                  here("index.html"))
 
 

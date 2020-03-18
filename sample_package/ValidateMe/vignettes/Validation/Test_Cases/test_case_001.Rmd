@@ -1,4 +1,4 @@
-#' @title RStudio Conf 2020 Success Test Cases 001
+#' @title DataOpticon 2020 Success Test Cases 001
 #' @section Last Updated By: 
 #' Ellis Hughes
 #' @section Last Update Date:
@@ -6,7 +6,7 @@
 
 + _Test Cases_
 
-  + Setup: Create RStudio::Conf 2020 Presentation 
+  + Setup: Create DataOpticon 2020 Presentation 
    
   + T 1.1 Test that specifications 1.1, 1.2, and 1.3 are met by practicing presentation on unsuspecting co-workers
     - Present to a captive audience of coworkers and later your significant other
