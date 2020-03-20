@@ -23,8 +23,8 @@ pres <- sidescroller(
     name = "DataOpticon_pres",
     version = "1.0",
     src = c(href = "www"),
-    script = c("rstudio_conf_2020.js","prism.js"),
-    stylesheet = c("RStudio_conf_2020.css","prism.css"))))
+    script = c("dataopticon_2020.js","prism.js"),
+    stylesheet = c("dataopticon_2020.css","prism.css"))))
 
 ## Title ----
 pres_title <- pres %>% 
@@ -356,7 +356,7 @@ pres_val_specification <- pres_val_elements2 %>%
   panel(
   div(div(markdown_to_html("
   ```{r eval=FALSE, echo = TRUE}
-  #' @title Specifications For DataOpticon Conf 2020 Success
+  #' @title Specifications For DataOpticon 2020 Success
   #' @section Last Updated By:
   #' Ellis Hughes
   #' @section Last Update Date:
@@ -816,8 +816,8 @@ pres_final <- pres_conclusion %>%
   
    <div style = 'margin:auto;padding-top:20px;text-align:left; z-index:21; position: relative;'>
    <br>
-   <div style = 'background-color: #ffffff;opacity: .5;border-radius: 10px;width: 900px;padding: 20px;font-size: 60px;margin:auto;color: black;'>
-    <p style = 'margin-bottom: 0; font-size: 70px;'>Presentation available at: <br><a href = 'https://thebioengineer.github.io/dataopticon_2020' style='text-decoration: none;'>   thebioengineer.github.io/validation</a></p>
+   <div style = 'background-color: #ffffff;opacity: .5;border-radius: 10px;width: 1100px;padding: 20px;font-size: 60px;margin:auto;color: black;'>
+    <p style = 'margin-bottom: 0; font-size: 70px;'>Presentation available at: <br><a href = 'https://thebioengineer.github.io/dataopticon_2020' style='text-decoration: none;'> thebioengineer.github.io/datatopticon_2020</a></p>
     <br>
     <p style = 'margin-bottom: 0;'><i style = 'text-decoration: none;' class='fa fa-github-square'></i> github.com/thebioengineer/dataopticon_2020</p>
     <br>
